@@ -58,6 +58,7 @@ pushd ${ART_ROOT}
   go run github.com/xiaokangwang/V2BuildAssist/v2buildutil gen file v2ray-openbsd-32.zip
   go run github.com/xiaokangwang/V2BuildAssist/v2buildutil gen file v2ray-dragonfly-64.zip
 } >Release.unsigned.unsorted
+  cat Release.unsigned.unsorted
   go run github.com/xiaokangwang/V2BuildAssist/v2buildutil gen sort < Release.unsigned.unsorted > Release.unsigned
 
   {
